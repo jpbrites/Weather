@@ -7,7 +7,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
  
   `;
 

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { AreaInput, ButtonPesquisar, Container, InputCidade } from './styles'
 import { useNavigate } from 'react-router-dom';
 import { useWeather } from '../../WeatherContext';
-import video from '../../assets/fundo.mp4'
+import fundo from '../../assets/fundo_home.jpeg'
 
 function Home() {
   const [city, setCity] = useState('')
@@ -35,7 +35,7 @@ function Home() {
     
   }
   return (
-      <Container>
+      <Container style={{backgroundImage: `url(${fundo})`}}>
         <AreaInput>
             <span className='title-1'>Verifique agora o tempo na sua cidade!</span>
             <span className='title-2'>Digite o nome da sua cidade no campo abaixo e em seguida clique em pesquisar</span>
